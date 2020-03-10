@@ -306,7 +306,8 @@ call(SvcName, App, Message) ->
     | {eval, eval()}
     | {neg, peer_filter()}
     | {all, [peer_filter()]}
-    | {any, [peer_filter()]}.
+    | {any, [peer_filter()]}
+    | {first, [peer_filter()]}.
 
 -opaque peer_ref()
    :: pid().
